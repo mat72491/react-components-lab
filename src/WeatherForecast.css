@@ -1,0 +1,46 @@
+:root{
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section {
+    display: flex;
+    gap: 5px;
+  }
+  
+  section .weather {
+    border: 1px solid #ccc;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background: skyblue;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+  }
+  
+  .weather span {
+    font-weight: bold;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    text-shadow: 3px 3px 3px black;
+  }
+
+
+  
